@@ -11,6 +11,7 @@
 #include<iostream>
 using std :: cout;
 using std :: cin;
+using std :: endl;
 
 int main() {
 
@@ -23,7 +24,9 @@ D = 500
 M = 1000
 
 cout << "Please enter an integer: " << endl;
-cin >> 
+  cin >> a;
+  
+  for () {
 
 cout << "Would you like to convert another integer (Y/N)?" << endl;
 
