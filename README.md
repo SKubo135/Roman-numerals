@@ -50,7 +50,7 @@ if (integer >= 100) {
       }
     }
     else if (piece == 4) {
-      roma += "CD";
+      roman += "CD";
     }
     else if (piece >= 1) {
       for (int i = 0; i < piece; i++) {
@@ -106,4 +106,12 @@ if (integer >= 1) {
   }
   
   cout << roman << endl;
+ 
+ do {
+   cout << "Would you like to convert another integer? (Y/N)"; endl;
+  cin >> choice;
+ } while ((choice == 'Y') || (choice == 'y'));
+  
+  return 0;
+  
 }
