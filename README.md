@@ -18,7 +18,6 @@ using std :: endl;
 int main() {
 
 string roman;
-string choice;
 int integer;
 int piece;
 
@@ -28,20 +27,18 @@ cout << "Please enter an integer:" << endl;
 if ((integer >= 4000) || (integer <= 0)) {
   cout << "Invalid integer" << endl;
 }
-else {
-  if (integer >= 1000) {
+else if (integer >= 1000) {
     piece = integer / 1000;
     
-    for ( i = 0; i < piece; i++) {
+    for (int i = 0; i < piece; i++) {
       roman += 'M';
     }
     integer %= 1000;
   }
 }
-
 if (integer >= 100) {
   piece = integer / 100;
-    if (piece == 9) {
+    else if (piece == 9) {
       roman += "CM";
     }
     else if (piece >= 5) {
@@ -109,10 +106,12 @@ if (integer >= 1) {
   
   cout << roman << endl;
   
-  cout << "Would you like to convert another integer? (Y/N)"; endl;
-  cin >> choice;
-  
-  while ((choice != 'N') || (choice != 'n'));
+ do {
+    string choice;
+     
+    cout << "Would you like to convert another integer? (Y/N)"; endl;
+    cin >> choice;
+} while (choice != 'N' || choice != 'n');
   
   return 0;
   
