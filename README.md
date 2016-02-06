@@ -35,7 +35,7 @@ cout << "Please enter an integer: " << endl;
           roman += 'M' ;
         }
     }
-    integer % 1000;
+    integer %= 1000;
   }
    
    if (integer >= 100) {
@@ -59,20 +59,59 @@ cout << "Please enter an integer: " << endl;
         roman += 'C';
       }
     }
-    integer % 100;
+    integer %= 100;
+  }
+  
+  if (integer >= 10) {
+    piece = integer / 10;
     
+    if (piece == 9) {
+      roman += "XC";
+    }
+    else if (piece >= 5) {
+      roman += 'L';
+      
+      for (int i = 0; i < piece -5; i++) {
+        roman =+ 'X';
+      }
+    }
+    else if (piece == 4) {
+      roman += "XL";
+    }
+    else if (piece >= 1) {
+      for (int i = 0; i < piece; i++) {
+        roman += 'X';
+      }
+    }
+    integer %= 10;
+  }
+  
+  if (integer >=1) {
+    piece = integer;
     
+    if (piece == 9) {
+    roman =+ "IX";
+    }
+    else if (piece >= 5) {
+      roman += 'V';
+      
+      for (int i = 0; i < piece - 5; i++) {
+        roman += 'I';
+      }
+    }
+    else if (piece == 4) {
+      roman += "IV";
+    }
+    else if (piece >= 1) {
+      for (int i = 0; i < piece; i++) {
+        roman += 'I';
+      }
+    }
     
   }
   
-  
-  do {
-    cout << "Would you like to convert another integer? (Y/N)" << endl;
-    } while (choice == 'y' || choice == 'Y')
-  
-
   cout << "--> " << roman << endl;
-
+  
   return 0;
 
 }
