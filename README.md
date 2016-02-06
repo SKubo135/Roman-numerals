@@ -106,11 +106,11 @@ if (integer >= 1) {
   }
   
   cout << roman << endl;
- 
- do {
-   cout << "Would you like to convert another integer? (Y/N)"; endl;
+  
+  cout << "Would you like to convert another integer? (Y/N)"; endl;
   cin >> choice;
- } while ((choice == 'Y') || (choice == 'y'));
+  
+  while ((choice != 'N') || (choice != 'n'));
   
   return 0;
   
