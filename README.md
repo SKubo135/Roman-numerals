@@ -8,8 +8,9 @@
 * Convert numbers to Roman Numerals.
 */
 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
+using std :: string;
 using std :: cout;
 using std :: cin;
 using std :: endl;
@@ -17,6 +18,7 @@ using std :: endl;
 int main() {
 
 string roman;
+string choice;
 int integer;
 int piece;
 
@@ -69,7 +71,7 @@ if (integer >= 10) {
   else if (piece >= 5) {
     roman += 'L';
     
-    for (int i = 0; i < piece - 5, i++) {
+    for (int i = 0; i < piece - 5; i++) {
       roman += 'X'
     }
   }
@@ -92,7 +94,7 @@ if (integer >= 1) {
   else if (piece >= 5) {
     roman += 'V';
     
-    for (int i = 0; i < piece - 5, i++) {
+    for (int i = 0; i < piece - 5; i++) {
       roman += 'I';
     }
     else if (piece == 4) {
