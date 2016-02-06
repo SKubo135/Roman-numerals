@@ -109,7 +109,7 @@ if (integer >= 1) {
  do {
     string choice;
      
-    cout << "Would you like to convert another integer? (Y/N)"; endl;
+    cout << "Would you like to convert another integer (Y/N)?"; endl;
     cin >> choice;
 } while (choice != 'N' || choice != 'n');
   
