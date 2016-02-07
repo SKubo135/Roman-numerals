@@ -21,7 +21,10 @@ int main() {
 string roman;
 int integer;
 int piece;
+char ans;
 
+do {
+    
 cout << "Please enter an integer:" << endl;
   cin >> integer;
   
@@ -111,17 +114,13 @@ else if (integer >= 1000) {
         }
     }
     
-    char ans;
 
 cout << roman << endl;
 
-do {
-    cout << "Would you like to convert another integer (Y/N)?" << endl;
-    cin >> ans;
+cout << "Would you like to convert another integer (Y/N)?" << endl;
+cin >> ans;
 
 } while (ans == 'Y' || ans == 'y');
-
-
 
 return 0;
 
