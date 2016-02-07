@@ -5,7 +5,7 @@
 * ------------------------------------------------------------------------- */
 
 /**
-* Convert numbers to Roman Numerals.
+* A program to convert regular numbers to Roman Numerals.
 */
 
 #include <iostream>
